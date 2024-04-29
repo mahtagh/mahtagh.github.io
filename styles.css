@@ -460,29 +460,42 @@ section .title {
   background-image: -webkit-linear-gradient(0deg, #3a6dc1 0%, #195cc8 100%);
   color: #195cc8;
 }
-
-.skills-content .right .mern::before {
-  width: 92%;
+.skills-content .right .hundred::before {
+  width: 100%;
+}
+.skills-content .right .ninty::before {
+  width: 90%;
 }
 
-.skills-content .right .js::before {
-  width: 88%;
+.skills-content .right .eighty::before {
+  width: 80%;
 }
 
-.skills-content .right .react::before {
-  width: 75%;
-}
-
-.skills-content .right .wireframing::before {
+.skills-content .right .seventy::before {
   width: 70%;
 }
 
-.skills-content .right .prototyping::before {
-  width: 85%;
+.skills-content .right .sixty::before {
+  width: 60%;
 }
 
-.skills-content .right .figma::before {
-  width: 75%;
+.skills-content .right .fifty::before {
+  width: 50%;
+}
+
+.skills-content .right .fourty::before {
+  width: 40%;
+}
+.skills-content .right .thirty::before {
+  width: 30%;
+}
+
+.skills-content .right .twenty::before {
+  width: 20%;
+}
+
+.skills-content .right .ten::before {
+  width: 10%;
 }
 
 .max-width {
