@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: #FFAAA5;
+  background-color: #E0F9B5;
   margin: 0px;
 }
 
@@ -43,7 +43,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #195cc8;
+  color: #6155A6;
   font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ section {
 }
 
 span {
-  color: #195cc8;
+  color: #E4508F;
 }
 
 .span2 {
@@ -87,7 +87,7 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #eae4d7;
+  background-color: #d8eefc;
   height: 65px;
   font-size: 20px;
   padding-left: 8%;
@@ -111,7 +111,7 @@ span {
   overflow: hidden;
 }
 
-/*Container for menu button  */
+/*header colors. Container for menu button  */
 
 .menu-button-container {
   display: none;
@@ -134,7 +134,7 @@ span {
 .menu-button::after {
   display: block;
   /* background-color: white; */
-  background-color: #195cc8;
+  background-color: #556FB5;
   position: absolute;
   height: 6px;
   width: 32px;
@@ -169,7 +169,7 @@ span {
   transform: rotate(-45deg);
 }
 
-/* Styling the hero section */
+/* backround of welcome Styling the hero section */
 
 .hero {
   display: flex;
@@ -177,7 +177,7 @@ span {
   gap: 1.5rem;
   height: calc(100% - 65px);
   align-items: center;
-  background-color: #eae4d7;
+  background-color: #ffffff;
 }
 
 /* Styling the hero image */
@@ -209,7 +209,7 @@ span {
 
 button {
   background-color: transparent;
-  color: #195cc8;
+  color: #4b7083;
   text-decoration: none;
   border: 2px solid black;
   font-weight: bold;
@@ -225,7 +225,7 @@ button {
 }
 
 .btn1 {
-  background-color: #195cc8;
+  background-color: #4b7083;
   color: white;
   border: none;
   padding: 15px 32px;
@@ -289,7 +289,7 @@ h3 {
   width: 100%;
   height: 100vh;
   padding: 150px 0px;
-  background-color: #e8e9e3;
+  background-color: #FEFDCA;
 }
 
 .about img {
@@ -318,7 +318,7 @@ h3 {
   text-transform: capitalize;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #195cc8;
+  color: #6155A6;
   font-family: 'Fraunces', serif;
 }
 
@@ -347,7 +347,7 @@ Skills
 /* skills section styling */
 
 .skills {
-  height: 100vh;
+  height: 110vh;
 }
 
 .skills .skills-content {
@@ -366,7 +366,7 @@ section .title {
   padding-bottom: 20px;
   letter-spacing: 1px;
   font-family: 'Fraunces', serif;
-  color: #195cc8;
+  color: #295BA7;
 }
 
 .skills .title::after {
@@ -398,7 +398,7 @@ section .title {
 .skills .skills-content .left a {
   display: inline-block;
   background: rgb(57, 95, 165);
-  color: #fff;
+  color: #FFE6E6;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
@@ -431,15 +431,15 @@ section .title {
 
 .skills .skills-content .right .line {
   position: relative;
-  border: 1px solid #504f4f;
+  border: 1px solid #89AA97;
   padding: 5px;
   border-radius: 10px;
   height: 10px;
-  background: #504f4f;
+  background: #89AA97;
 }
 
 .skills .skills-content .right .progressBar {
-  border: 1px solid #504f4f;
+  border: 1px solid #085F63;
   padding: 5px;
   border-radius: 10px;
 }
@@ -456,9 +456,9 @@ section .title {
   border-radius: 5px;
   vertical-align: middle;
   align-self: center;
-  background-image: -moz-linear-gradient(0deg, #3a6dc1 0%, #195cc8 100%);
-  background-image: -webkit-linear-gradient(0deg, #3a6dc1 0%, #195cc8 100%);
-  color: #195cc8;
+  background-image: -moz-linear-gradient(0deg, #AFFFDF 0%, #295BA7 100%);
+  background-image: -webkit-linear-gradient(0deg, #AFFFDF 0%, #295BA7 100%);
+  color: #085F63;
 }
 .skills-content .right .hundred::before {
   width: 100%;
@@ -512,10 +512,25 @@ section .title {
 /* experience */
 
 /* experience container */
+.CV {
+  width: 100%;
+  height: 120vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 10em;
+  color: #222222;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
 
 .CV-page {
   max-width: 800px;
-  height: 100vh;
+  height: 110vh;
   margin: 0 auto;
   padding: 0 2em;
   color: #222222;
@@ -531,8 +546,9 @@ section .title {
   text-align: center;
   font-weight: bold;
   font-size: 50px;
-  color: #195cc8;
+  color: #6155A6;
   font-family: 'Fraunces', serif;
+  
 }
 
 .CV-secondaryHeading::after {
@@ -555,14 +571,14 @@ section .title {
   display: table-cell;
 }
 
-.CV-timeline {
+/* .CV-timeline {
   position: relative;
   margin: 0 0 0 0.5em;
   padding-left: 1.5em;
   border-left: solid 1px #a1b2b1;
-}
+} */
 
-.CV-timeline:first-of-type {
+/* .CV-timeline:first-of-type {
   margin-top: 1em;
 }
 
@@ -579,9 +595,9 @@ section .title {
   width: 1em;
   height: 1em;
   border: solid 1px #222222;
-  background-color: #ffffff;
+  background-color: #FFABE1;
   border-radius: 50%;
-}
+} */
 
 .CV-timeline-heading {
   margin: 0;
@@ -594,7 +610,9 @@ section .title {
 }
 
 .CV-timeline-heading-title {
+  display: block;
   line-height: 1;
+  font-size: 0.8em;
   font-style: italic;
   text-transform: uppercase;
   /* background: none;
@@ -603,7 +621,16 @@ section .title {
 }
 
 .CV-timeline-heading-location {
-  font-size: 0.8em;
+  font-size: 0.6em;
+  background: none;
+  /* -webkit-text-fill-color: #a1b2b1;
+    -webkit-background-clip: text; */
+  color: #111;
+}
+
+.CV-job {
+  margin-bottom: 2em; /* Increase the space below the previous tag */
+  font-size: 19px;
   background: none;
   /* -webkit-text-fill-color: #a1b2b1;
     -webkit-background-clip: text; */
@@ -612,7 +639,7 @@ section .title {
 
 .CV-timeline-heading-duration {
   display: block;
-  font-size: 0.7em;
+  font-size: 0.6em;
   background: none;
   -webkit-text-fill-color: #6f6f6f;
   -webkit-background-clip: text;
@@ -624,18 +651,19 @@ section .title {
   padding-bottom: 2em;
   padding: 0 0 1em 1em;
   list-style-type: disc;
-  font-size: 15px;
+  font-size: 18px;
 }
 
-.CV-timeline-details-item,
-.CV-job-timeline-item {
+.CV-timeline-details-item, .CV-job-timeline-item {
   margin-bottom: 0.3em;
+
 }
+
 
 /* service */
 
 .service {
-  background-color: rgb(232, 233, 227);
+  background-color: #FEFDCA;
   width: 100%;
   padding: 100px 0px;
   height: 100vh;
@@ -691,7 +719,7 @@ section .title {
 }
 
 h5 {
-  color: #195cc8;
+  color: #6155A6;
   font-size: 23px;
   margin-bottom: 15px;
 }
@@ -704,7 +732,7 @@ h5 {
 
 .card .button {
   background-color: transparent;
-  color: #195cc8;
+  color: #6155A6;
   text-decoration: none;
   border: 2px solid black;
   font-weight: bold;
@@ -715,14 +743,14 @@ h5 {
 
 .card .button:hover {
   background-color: transparent;
-  border: 2px solid #249f9f;
+  border: 2px solid #6155A6;
   cursor: pointer;
 }
 
 /* contact me  */
 
 .contact {
-  height: 100vh;
+  height: 40vh;
 }
 
 .contactUs {
@@ -747,12 +775,15 @@ h5 {
 }
 
 .contactLeft {
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   height: 100%;
 }
 
 .contactRight {
   padding: 25px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background: #191919; */
 }
 
@@ -770,6 +801,7 @@ h5 {
 }
 
 .contact-img {
+  align-items: center;
   margin: 1rem;
   border-radius: 100%;
   width: 200px;
@@ -780,7 +812,7 @@ h5 {
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0);
   outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem 1rem;
   font-size: 1.5rem;
   margin-bottom: 22px;
@@ -836,7 +868,7 @@ h5 {
 /* footer */
 
 #social_icon_footer {
-  background-color: #dedede;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -983,7 +1015,7 @@ h5 {
   .card {
     margin: 15px auto;
   }
-  .CV-page {
+  .CV {
     height: fit-content;
   }
   .contact {
@@ -998,7 +1030,7 @@ h5 {
     padding: 0;
     max-width: fit-content;
   }
-  .CV-page {
+  .CV {
     padding: 0 1em;
   }
 }
