@@ -4,7 +4,7 @@
 /* Basic Css */
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,7 +43,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #6155A6;
+  color: #295BA7;
   font-weight: bold;
 }
 
@@ -61,6 +61,12 @@ section {
   display: inline-block;
 }
 
+.custom-heading {
+  color: black; /* Change color to blue */
+  font-family: 'Fraunces', cursive;
+  font-size: 2.5rem;
+}
+
 .logo i {
   padding-right: 2rem;
   color: black;
@@ -73,11 +79,12 @@ section {
 }
 
 span {
-  color: #E4508F;
+  color: #D77FA1;
 }
 
+
 .span2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
 }
 
 /* Styling the nav container */
@@ -134,7 +141,7 @@ span {
 .menu-button::after {
   display: block;
   /* background-color: white; */
-  background-color: #195cc8;
+  background-color: #295BA7;
   position: absolute;
   height: 6px;
   width: 32px;
@@ -236,12 +243,12 @@ h1 {
   color: black;
   margin: 20px 0px 20px;
   font-size: 80px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
   letter-spacing: 2px;
 }
 
 .surname {
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
 }
 
 h2 {
@@ -293,6 +300,7 @@ h3 {
 .about-text {
   width: 550px;
   margin-right: 1em;
+  padding-left: 2em;
 }
 
 /* about container */
@@ -310,8 +318,8 @@ h3 {
   text-transform: capitalize;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #6155A6;
-  font-family: 'Fraunces', serif;
+  color: #295BA7;
+  font-family: 'Times New Roman', serif;
 }
 
 .about-text h5 {
@@ -321,7 +329,7 @@ h3 {
   text-transform: capitalize;
   font-weight: bold;
   color: black;
-  font-family: 'Frances', serif;
+  font-family: 'Times New Roman', serif;
 }
 
 .about-text p {
@@ -357,7 +365,7 @@ section .title {
   margin-bottom: 85px;
   padding-bottom: 20px;
   letter-spacing: 1px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
   color: #295BA7;
 }
 
@@ -373,7 +381,7 @@ section .title {
 }
 
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  /* width: calc(50% - 30px); */
 }
 
 .skills .skills-content .left .text {
@@ -517,7 +525,7 @@ section .title {
 
   color: #222222;
   font-size: 1em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 
@@ -601,7 +609,7 @@ section .title {
   text-align: center;
   font-weight: 500;
   color: #195cc8;
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
 }
 
 .title h2 ::after {
@@ -617,7 +625,7 @@ section .title {
 }
 
 h5 {
-  color: #6155A6;
+  color: #295BA7;
   font-size: 23px;
   margin-bottom: 15px;
 }
@@ -717,7 +725,7 @@ h5 {
   font-size: 50px;
   font-weight: 500;
   color: #195cc8;
-  font-family: 'Fraunces', serif;
+  font-family: 'Times New Roman', serif;
 }
 
 
