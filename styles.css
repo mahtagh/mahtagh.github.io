@@ -64,6 +64,10 @@ section {
 .custom-heading {
   color: black; /* Change color to blue */
   font-family: 'Fraunces', cursive;
+  font-size: 2.5rem;
+}
+.custom-heading1 {
+  color: black; /* Change color to blue */
   font-size: 2rem;
 }
 
