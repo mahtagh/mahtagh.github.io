@@ -1,205 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahta Ghorbanian | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahta Ghorbanian - Software Engineer</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://static.fontawesome.com/css/fontawesome-app.css"
+    />
+    <link rel="icon" type="image/png" href="logo.png">  
+
 </head>
+
 <body>
+    <div class="main-container">
+                <header>
+            <section class="nav">
+                                <div class="logo">
+                    <h2 class="custom-heading1">
+                        <img src="logo.png" alt="Custom Icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">
+                        Mahta Ghorbanian
+                    </h2>
+                </div>
 
-    <header>
-        <div class="header-container">
-            <h1>Mahta Ghorbanian</h1>
-            <div class="contact-info">
-                <span><i class="fas fa-map-marker-alt"></i> Calgary, Canada</span>
-                <span><a href="mailto:mahtagho@gmail.com"><i class="far fa-envelope"></i> mahtagho@gmail.com</a></span>
-                <span><a href="tel:+14039703511"><i class="fas fa-phone"></i> +1 403 970 3511</a></span>
-                <span><a href="https://mahtagh.github.io/"><i class="fas fa-link"></i> mahtagh.github.io/</a></span>
-                <span><a href="https://www.linkedin.com/in/mahta-ghorbanian/"><i class="fab fa-linkedin-in"></i> linkedin.com/in/mahta-ghorbanian/</a></span>
-                <span><a href="https://github.com/mahtagh"><i class="fab fa-github"></i> github.com/mahtagh</a></span>
-            </div>
-        </div>
-    </header>
+                                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
+                                <ul class="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </section>
+        </header>
 
-    <main>
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Experienced in C#, Java, and Python. Familiar with Django, React and JavaScript. Passionate about software development, I enjoy tackling complex problems and creating impactful solutions.</p>
-            <p>I'm always eager to connect with fellow tech enthusiasts and industry professionals to discuss new technologies and explore opportunities in the software development world. Good at working with teams to create effective and user-friendly software solutions. Committed to continuous learning and applying new technologies.</p>
-        </section>
+                <section class="hero" id="hero">
+                        <div class="herocontent">
+                <h4 class="custom-heading">Hello! I'm</h4>
+                <h1>M<span class="surname">a</span>h<span>t</span>a <span>Gho</span>rban<span>ian</span></h1>
+                <h2>A Software <span class="span2"></span><span class="span2"></span> Engineer.</h2>
+                <h3><span class="span2">Welcome</span> to my <span class="span2">Portfolio!</span></h3>
+                <h4> </h4>
+            </div>
+            <div class="image">
+                <img src="developer.jpg" alt=" " />
+            </div>
+        </section>
+                        <section class="about" id="about">
+            <div class="main">
+                <img src="about.jpg" class="aboutimg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Software Engineer</h5>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> C#, Java, Python, C, JavaScript, HTML, CSS</li>
-                <li><strong>Technologies and Frameworks:</strong> Visual Studio, Eclipse, Git, GitHub, Jira, Android Studio, Django, React</li>
-                <li><strong>Databases:</strong> SQL, MySQL, PostgreSQL</li>
-                <li><strong>Methodologies:</strong> Agile, Object-Oriented Design (OOD), Unified Modelling Language (UML)</li>
-                <li><strong>Testing:</strong> Unit Testing, Junit</li>
-                <li><strong>Data Analysis:</strong> Tableau, Power BI, Excel</li>
-                <li><strong>Other Skills:</strong> Desktop Application Development, Debugging and Troubleshooting, Teamwork, Research</li>
-            </ul>
-        </section>
-
-        <section class="experience">
-            <h2>Experience</h2>
-            <div class="job-entry">
-                <div class="job-header">
-                    <h3>Software Engineer</h3>
-                    <div class="job-info">
-                        <span>University of Calgary, Calgary, CA</span>
-                        <span>2022 – 2025</span>
-                    </div>
-                </div>
-                <ul>
-                    <li>Integrated a C# Windows application with a research project, improving its visibility and functionality.</li>
-                    <li>Developed an intuitive graph using Windows Forms, significantly enhancing user interface usability.</li>
-                    <li>Created a feature to export data to Jira, which streamlined project management processes.</li>
-                    <li>Performed comparative analysis on application versions, extracting key metrics to quantify improvements.</li>
-                    <li>Collaborated with supervisors and the team to efficiently meet project goals.</li>
-                    <li>Identified and fixed code issues, leading to improved software quality and performance.</li>
-                </ul>
-            </div>
-            <div class="job-entry">
-                <div class="job-header">
-                    <h3>Teaching Assistant</h3>
-                    <div class="job-info">
-                        <span>University of Calgary, Calgary, CA</span>
-                        <span>2021 – 2024</span>
-                    </div>
-                </div>
-                <ul>
-                    <li>Led data analysis tutorials for over 160 students, focusing on data visualization tools like Tableau and Power BI.</li>
-                    <li>Instructed over 120 students in core software engineering principles, including UML and Java.</li>
-                    <li>Mentored students in applying data analysis concepts to real-world datasets.</li>
-                    <li>Worked with professors to align tutorial content with lecture materials and course objectives.</li>
-                </ul>
-            </div>
-            <div class="job-entry">
-                <div class="job-header">
-                    <h3>Intern Android Developer</h3>
-                    <div class="job-info">
-                        <span>Part Software Company, Mashhad, IR</span>
-                        <span>2019</span>
-                    </div>
-                </div>
-                <ul>
-                    <li>Gained hands-on experience in Android development using Android Studio and Java.</li>
-                    <li>Contributed to a team environment and learned essential version control using Git.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class="project-entry">
-                <div class="project-header">
-                    <h3>Simple Starter Web Application</h3>
-                    <div class="project-info">
-                        <a href="https://github.com/mahtagh/Noting-App-Backend"><i class="fab fa-github"></i> Backend</a>
-                        <a href="https://github.com/mahtagh/Noting-App-Frontend"><i class="fab fa-github"></i> Frontend</a>
-                    </div>
-                </div>
-                <ul>
-                    <li>Implemented user registration and login functionality using Django and React.</li>
-                    <li>Developed features for users to add and delete notes, showcasing full-stack capabilities.</li>
-                    <li>Tools Used: JavaScript, Python, Django, React</li>
-                </ul>
-            </div>
-            <div class="project-entry">
-                <div class="project-header">
-                    <h3>Launch Rocket Android Application</h3>
-                    <div class="project-info">
-                        <a href="https://github.com/mahtagh/Rocket-Android-App"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <ul>
-                    <li>Developed an Android app that displays a paginated list of upcoming rocket launches.</li>
-                    <li>Built a real-time countdown timer to show the remaining time until the next launch.</li>
-                    <li>Tools Used: Android Studio, Kotlin</li>
-                </ul>
-            </div>
-            <div class="project-entry">
-                <div class="project-header">
-                    <h3>Deprecated API Analysis Tool</h3>
-                    <div class="project-info">
-                        </div>
-                </div>
-                <ul>
-                    <li>Engineered a data-driven tool to analyze API deprecation patterns across 40 Java projects.</li>
-                    <li>Leveraged Java for data extraction, Python for statistical analysis, and SQL for efficient data storage.</li>
-                    <li>Generated actionable insights on API usage trends, enabling project owners to optimize their codebases and improve software maintainability.</li>
-                </ul>
-            </div>
-            <div class="project-entry">
-                <div class="project-header">
-                    <h3>Smart House Android App</h3>
-                    <div class="project-info">
-                        </div>
-                </div>
-                <ul>
-                    <li>Developed functionality for receiving data from smart home modules.</li>
-                    <li>Implemented a system to control lighting in a smart home environment.</li>
-                    <li>Tools Used: Java, Android Studio</li>
-                </ul>
-            </div>
-            <div class="project-entry">
-                <div class="project-header">
-                    <h3>Bombs and Stars Game</h3>
-                    <div class="project-info">
-                        </div>
-                </div>
-                <ul>
-                    <li>Designed and created an interactive game with user-controlled characters.</li>
-                    <li>Used Java Swing to build an engaging and responsive user interface.</li>
-                    <li>Tools Used: Java, Java Swing</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <div class="education-entry">
-                <h3>M.Sc. Computer Science</h3>
-                <p>University of Calgary</p>
-                <div class="education-info">
-                    <span>2021 - 2025</span>
-                </div>
-                <ul>
-                    <li><strong>Relevant Courses:</strong> Fundamentals of Social Network Analysis and Data Mining, Software Evolution & Reuse</li>
-                </ul>
-            </div>
-            <div class="education-entry">
-                <h3>B.Sc. Software Engineering</h3>
-                <p>Ferdowsi University</p>
-                <div class="education-info">
-                    <span>2015 - 2020</span>
-                </div>
-                <ul>
-                    <li><strong>Relevant Courses:</strong> Data Structures, Object-Oriented Programming, Database Systems</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="certificates">
-            <h2>Courses and Certificates</h2>
-            <div class="certificate-entry">
-                <h3>SQL, Database Design, and Python for Developers</h3>
-                <div class="certificate-info">
-                    <span>DataCamp</span>
-                    <span>2025</span>
-                </div>
-            </div>
-            <div class="certificate-entry">
-                <h3>Django & React Web App Tutorial</h3>
-                <div class="certificate-info">
-                    <span>2025</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-</body>
-</html>
+                    <p>I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Experienced in C#, Java, and Python. Familiar with Django, React and JavaScript. Passionate about software development, I enjoy tackling complex problems and creating impactful solutions.</p>
+                    <p>I'm always eager to connect with fellow tech enthusiasts and industry professionals to discuss new technologies and explore opportunities in the software development world. Good at working with teams to create effective and user-friendly software solutions. Committed to continuous learning and applying new technologies.</p>
+                    
+                    <p style="color: #295BA7; font-weight: bold;">
+                        Contact Me:
+                        &nbsp;&nbsp;                         <a href="mailto:mahtagho@gmail.com" title="mahtagho@gmail.com">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        &nbsp;&nbsp;                         <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank" title="LinkedIn: Mahta Ghorbanian">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        &nbsp;&nbsp;                         <a href="https://github.com/mahtagh" target="_blank" title="GitHub: mahtagh">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+                        <section class="skills" id="skills">
+            <div class
