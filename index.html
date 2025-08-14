@@ -1,271 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahta Ghorbanian - Software Engineer</title>
-
-<!-- Add in the custom css     -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://static.fontawesome.com/css/fontawesome-app.css"
-    />
-    <link rel="icon" type="image/png" href="logo.png">  
-
+    <title>Mahta Ghorbanian - Portfolio</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .header-bg {
+            background-color: #f7f7f7;
+        }
+        .section-title {
+            font-family: 'Roboto Slab', serif;
+            color: #2c3e50;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: #3498db;
+            margin-top: 0.25rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .list-item-border {
+            border-left: 2px solid #bdc3c7;
+            padding-left: 1rem;
+        }
+        .text-accent {
+            color: #3498db;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+<body class="bg-gray-50 text-gray-700">
 
-
-
-<body>
-    <div class="main-container">
-        <!-- header section starts  -->
-
-        <header>
-            <section class="nav">
-                <!-- We can also insert any logo here     -->
-
-
-                <div class="logo">
-                    <h2 class="custom-heading1">
-                        <img src="logo.png" alt="Custom Icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">
-                        Mahta Ghorbanian
-                    </h2>
-                                </div>
-
-                <!--  checkbox to control the icon's state    -->
-                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-                <!--  main menu    -->
-                <ul class="menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>
-            </section>
-        </header>
-
-        <!-- header section ends -->
-        <section class="hero" id="hero">
-
-
-            <!----hero Section start---->
-
-            <div class="herocontent">
-                <h4 class="custom-heading">Hello! I'm</h4>
-                <h1>M<span class="surname">a</span>h<span>t</span>a <span>Gho</span>rban<span>ian</span></h1>
-                <h2 >A Software <span class="span2"></span><span class="span2"></span> Engineer.</h2>
-                <h3><span class="span2">Welcome</span> to my <span class="span2">Portfolio!</span></h3>
-                <h4> </h4>
-
-                <!-- <button class="btn1">Contact Me</button>
-                <button class="btn2">Resume  <i class="bi bi-download"></i></button> -->
-
-
+    <!-- Header Section -->
+    <header class="header-bg py-12 px-6">
+        <div class="container mx-auto flex flex-col items-center text-center">
+            <h1 class="text-5xl font-bold section-title text-gray-900">Mahta Ghorbanian</h1>
+            <h2 class="text-xl mt-2 font-medium">Software Engineer</h2>
+            <div class="mt-8 space-y-2 md:space-y-0 md:space-x-8 flex flex-col md:flex-row items-center text-sm text-gray-500">
+                <a href="mailto:mahtagho@gmail.com" class="hover:text-gray-900 transition-colors duration-300 flex items-center">
+                    <i class="far fa-envelope mr-2"></i>mahtagho@gmail.com
+                </a>
+                <a href="tel:+1 403 970 3511" class="hover:text-gray-900 transition-colors duration-300 flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i>+1 403 970 3511
+                </a>
+                <a href="https://github.com/mahtagh" target="_blank" class="hover:text-gray-900 transition-colors duration-300 flex items-center">
+                    <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank" class="hover:text-gray-900 transition-colors duration-300 flex items-center">
+                    <i class="fab fa-linkedin-in mr-2"></i>LinkedIn
+                </a>
             </div>
+        </div>
+    </header>
 
-            <div class="image">
-                <img src="developer.jpg" alt=" " />
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+
+        <!-- Summary Section -->
+        <section id="summary" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Summary</h2>
+            <div class="bg-white p-8 rounded-lg border border-gray-200">
+                <p class="text-base leading-relaxed mb-4">
+                    I'm a Software Engineer with a background in Computer Science from the University of Calgary and a Bachelor's degree in Computer Engineering. Experienced in C#, Java, and Python. Familiar with Django, React and JavaScript. Passionate about software development, I enjoy tackling complex problems and creating impactful solutions.
+                </p>
+                <p class="text-base leading-relaxed">
+                    I'm always eager to connect with fellow tech enthusiasts and industry professionals to discuss new technologies and explore opportunities in the software development world. Good at working with teams to create effective and user-friendly software solutions. Committed to continuous learning and applying new technologies.
+                </p>
             </div>
-
         </section>
-        <!-- hero section ends -->
 
-
-        <!----About section start---->
-        <section class="about" id="about">
-            <div class="main">
-                <img src="about.jpg" class="aboutimg">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5>Software Engineer</h5>
-
-                    <p>I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Currently, I'm working as a Software Engineer/Research Assistant at University of Calgary.</p>
-    
-                    <p>I’m passionate about learning new technologies and collaborating on innovative solutions. I’m excited to grow as a developer, work on exciting projects, and be part of a team where we can share ideas and learn from each other.</p>
-                    
-                    <p>Outside of work, you’ll find me painting, hiking, or exploring new places. I'm always open to connecting with fellow tech enthusiasts, so feel free to reach out!</p>                    <!-- <button type="button">Let's Talk</button> -->
-                    
-                    <p style="color: #295BA7; font-weight: bold;">
-                        Contact Me:
-                        &nbsp;&nbsp; <!-- Adding space between the icons -->
-                        <a href="mailto:mahtagho@gmail.com" title="mahtagho@gmail.com">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                        &nbsp;&nbsp; <!-- Adding space between the icons -->
-                        <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank" title="LinkedIn: Mahta Ghorbanian">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </p>
-                    
-                    
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Languages</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript, HTML, CSS</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Technologies & Frameworks</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Visual Studio, Eclipse</li>
+                        <li>Git, GitHub, Jira</li>
+                        <li>Android Studio</li>
+                        <li>Django, React</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Databases</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Other Skills</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Agile, OOD, UML</li>
+                        <li>Unit Testing, Junit</li>
+                        <li>Tableau, Power BI, Excel</li>
+                        <li>Debugging, Teamwork</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <!-- About section ends -->
 
-        
-        <!-- skills section start -->
-        <section class="skills" id="skills">
-            <div class="max-width">
-                <h2 class="title">Key Skills</h2>
-                
-                <p class="section-title">Programming Languages:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">C#, Java, Python, C</li>
-                </ul>
-            
-                <p class="section-title">Tools & Frameworks:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">Windows Forms, Visual Studio, Eclipse, Git, Jira</li>
-                    <li class="CV-timeline-details-item">.NET Framework, Entity Framework</li>
-                </ul>
-            
-                <p class="section-title">Databases:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">MySQL, PostgreSQL</li>
-                </ul>
-            
-                <p class="section-title">Methodologies:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">Agile, Object-Oriented Design (OOD), Unified Modeling Language (UML)</li>
-                </ul>
-            
-                <p class="section-title">Testing:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">Unit Testing, JUnit</li>
-                </ul>
-            
-                <p class="section-title">Data Visualization:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">Tableau, Power BI</li>
-                </ul>
-            
-                <p class="section-title">Other Skills:</p>
-                <ul class="CV-timeline-details">
-                    <li class="CV-timeline-details-item">Desktop application development</li>
-                    <li class="CV-timeline-details-item">Debugging and troubleshooting in Visual Studio</li>
-                    <li class="CV-timeline-details-item">Object-Oriented Programming (OOP)</li>
-                </ul>
-            </div>
-        </section>
-        <!--skills section ends   -->
-
-<!-- Projects section -->
-
-<div class="CV" id="experience">
-    <div class="title">
-        <h2 class="project-heading">Experience</h2>
-    </div>
-
-    <div class="CV-jobs">
-        <section class="CV-timeline CV-job">
-            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Software Engineer/Research Assistant </span><span class="CV-timeline-heading-location">University of Calgary, Alberta, Canada </span><small class="CV-timeline-heading-duration">May 2022 - Present</small></h3>
-
-            <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">Skills: C#, Visual Studio .Net Framework, Windows Forms, Git, Jira</li>
-                <li class="CV-timeline-details-item">Integrated a C# Windows application with a research project, improving project visibility</li>
-                <li class="CV-timeline-details-item">Developed an intuitive graph using Windows Forms, enhancing user interface usability</li>
-                <li class="CV-timeline-details-item">Created a feature to export data to Jira, streamlining project management processes</li>
-                <li class="CV-timeline-details-item">Collaborated with supervisors and industry partners to meet project goals efficiently</li>
-                <li class="CV-timeline-details-item">Identified and fixed code issues, leading to improved software quality and performance</li>
-                
-            </ul>
-        </section>
-        <section class="CV-timeline CV-job">
-            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Teaching Assistant</span><span class="CV-timeline-heading-location">University of Calgary, Alberta, Canada </span><small class="CV-timeline-heading-duration">September 2021 – April 2024</small></h3>
-            <span class="CV-job"></span>
-            <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">Covered Topics: UML, Testing, JUnit, Java, Git, Trello, Eclipse, Tableau, Power BI, Excel</li>
-                <li class="CV-timeline-details-item">Taught courses on "Introduction to Software Engineering" and "Thinking with Data"</li>
-                <li class="CV-timeline-details-item">Helped over 100 students learn UML, Java, and data visualization tools</li>
-                <li class="CV-timeline-details-item">Worked with professors to align tutorial content with lecture materials</li>
-                
-            </ul>
-        </section>
-    </div>
-</div>
-
-
-<div class="service" id="projects">
-    <div class="title">
-        <h2 class="project-heading">Projects</h2>
-    </div>
-
-    <div class="CV-jobs">
-        <section class="CV-timeline CV-job">
-            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">A Study on Deprecated APIs</span></h3>
-            <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">Developed a program to analyze deprecated API usage in 40 Java projects</li>
-                <li class="CV-timeline-details-item">Used Java, Python, and Git for development and version control</li>
-                <li class="CV-timeline-details-item">Provided insights to help project owners improve their codebases</li>
-
-            </ul>
-        </section>
-
-        <section class="CV-timeline CV-job">
-            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Smart House Android App</span></h3>
-            <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">Developed functionality for receiving data from smart home modules</li>
-                <li class="CV-timeline-details-item">Implemented a system to control lighting in a smart home environment</li>
-            </ul>
-        </section>
-        <section class="CV-timeline CV-job">
-            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Bombs and Stars Game</span></h3>
-            <ul class="CV-timeline-details">
-                <li class="CV-timeline-details-item">Designed and created an interactive game with user-controlled characters</li>
-                <li class="CV-timeline-details-item">Used Java Swing to build an engaging user interface</li>
-
-            </ul>
-        </section>
-    </div>
-</div>
-
-
-<!-- Project section ends  -->
-               <!-- contact us section starts  -->
-        <section class="contact" id="contact">
-
-            <h2 class="contactTitle">Contact Me</h2>
-            <div class="container contactUs">
-
-                    <div class="left contactLeft">
-
-
-                        <div class="contact-info">
-
-                            <p><i class="bi bi-envelope-fill"></i><a href="mailto:mahtagho@gmail.com">  mahtagho@gmail.com</a></p>
-                            <p><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank">  linkedin.com/in/mahta-ghorbanian/</a></p>
-                            <p><i class="bi bi-geo-alt-fill"></i> Calgary, Alberta, Canada</p>
-
-                        </div>
-                        <p class='contact-content'>Thank you for taking the time to explore my portfolio. If you have any questions or need further information, please don't hesitate to contact me. </p>
-
-                        <!-- <p class='contact-content'>Thanks for visiting .</p> -->
-
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">Software Engineer - University of Calgary</h3>
+                        <p class="text-sm text-gray-500 mb-2">Calgary, CA | 2022 – 2025</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                            <li>Integrated a C# Windows application with a research project, improving its visibility and functionality.</li>
+                            <li>Developed an intuitive graph using Windows Forms, significantly enhancing user interface usability.</li>
+                            <li>Created a feature to export data to Jira, which streamlined project management processes.</li>
+                            <li>Performed comparative analysis on application versions, extracting key metrics to quantify improvements.</li>
+                            <li>Collaborated with supervisors and the team to efficiently meet project goals.</li>
+                            <li>Identified and fixed code issues, leading to improved software quality and performance.</li>
+                        </ul>
                     </div>
-
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">Teaching Assistant - University of Calgary</h3>
+                        <p class="text-sm text-gray-500 mb-2">Calgary, CA | 2021 – 2024</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                            <li>Led data analysis tutorials for over 160 students, focusing on data visualization tools like Tableau and Power BI.</li>
+                            <li>Instructed over 120 students in core software engineering principles, including UML and Java.</li>
+                            <li>Mentored students in applying data analysis concepts to real-world datasets.</li>
+                            <li>Worked with professors to align tutorial content with lecture materials and course objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">Intern Android Developer - Part Software Company</h3>
+                        <p class="text-sm text-gray-500 mb-2">Mashhad, IR | 2019</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                            <li>Gained hands-on experience in Android development using Android Studio and Java.</li>
+                            <li>Contributed to a team environment and learned essential version control using Git.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- contact section ends -->
 
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <a href="https://github.com/mahtagh/Noting-App-Backend" target="_blank" class="font-bold text-xl text-accent hover:underline transition-colors duration-300">
+                        Simple Starter Web Application <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Backend: <a href="https://github.com/mahtagh/Noting-App-Backend" target="_blank" class="hover:underline">github.com/mahtagh/Noting-App-Backend</a></p>
+                    <p class="text-sm text-gray-500">Frontend: <a href="https://github.com/mahtagh/Noting-App-Frontend" target="_blank" class="hover:underline">github.com/mahtagh/Noting-App-Frontend</a></p>
+                    <ul class="list-disc list-inside mt-4 space-y-1 text-gray-600">
+                        <li>Implemented user registration and login functionality using Django and React.</li>
+                        <li>Developed features for users to add and delete notes, showcasing full-stack capabilities.</li>
+                        <li>Tools Used: JavaScript, Python, Django, React.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <a href="https://github.com/mahtagh/Rocket-Android-App" target="_blank" class="font-bold text-xl text-accent hover:underline transition-colors duration-300">
+                        Launch Rocket Android Application <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                    <ul class="list-disc list-inside mt-4 space-y-1 text-gray-600">
+                        <li>Developed an Android app that displays a paginated list of upcoming rocket launches.</li>
+                        <li>Built a real-time countdown timer to show the remaining time until the next launch.</li>
+                        <li>Tools Used: Android Studio, Kotlin.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <a href="https://github.com/mahtagh" target="_blank" class="font-bold text-xl text-accent hover:underline transition-colors duration-300">
+                        Deprecated API Analysis Tool <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                    <ul class="list-disc list-inside mt-4 space-y-1 text-gray-600">
+                        <li>Engineered a data-driven tool to analyze API deprecation patterns across 40 Java projects.</li>
+                        <li>Leveraged Java for data extraction, Python for statistical analysis, and SQL for efficient data storage.</li>
+                        <li>Generated actionable insights on API usage trends, enabling project owners to optimize their codebases and improve software maintainability.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <a href="https://github.com/mahtagh" target="_blank" class="font-bold text-xl text-accent hover:underline transition-colors duration-300">
+                        Smart House Android App <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                    <ul class="list-disc list-inside mt-4 space-y-1 text-gray-600">
+                        <li>Developed functionality for receiving data from smart home modules.</li>
+                        <li>Implemented a system to control lighting in a smart home environment.</li>
+                        <li>Tools Used: Java, Android Studio.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <a href="https://github.com/mahtagh" target="_blank" class="font-bold text-xl text-accent hover:underline transition-colors duration-300">
+                        Bombs and Stars Game <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                    <ul class="list-disc list-inside mt-4 space-y-1 text-gray-600">
+                        <li>Designed and created an interactive game with user-controlled characters.</li>
+                        <li>Used Java Swing to build an engaging and responsive user interface.</li>
+                        <li>Tools Used: Java, Java Swing.</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
+        <!-- Education Section -->
+        <section id="education" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">M.Sc., Computer Science - University of Calgary</h3>
+                        <p class="text-sm text-gray-500 mb-2">2021 - 2025</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                            <li><span class="font-semibold">Relevant Courses:</span> Fundamentals of Social Network Analysis and Data Mining, Software Evolution & Reuse</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">B.Sc., Software Engineering - Ferdowsi University</h3>
+                        <p class="text-sm text-gray-500 mb-2">2015 - 2020</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                            <li><span class="font-semibold">Relevant Courses:</span> Data Structures, Object-Oriented Programming, Database Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Courses Section -->
+        <section id="courses" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-center mb-8">Courses and Certificates</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">SQL, Database Design, and Python for Developers</h3>
+                        <p class="text-gray-600">DataCamp</p>
+                    </div>
+                    <p class="text-gray-500">2025</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row justify-between">
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl text-gray-900">Django & React Web App Tutorial</h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <p class="text-gray-500">2025</p>
+                </div>
+            </div>
+        </section>
 
+    </main>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
