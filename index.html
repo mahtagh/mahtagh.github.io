@@ -13,10 +13,9 @@ export default function App() {
     name: 'Mahta Ghorbanian',
     contact: {
       email: 'mahtagho@gmail.com',
-      // Phone number removed as requested
-      location: 'Calgary, Canada',
       github: 'mahtagh.github.io/',
-      linkedin: 'www.linkedin.com/in/mahta-ghorbanian/'
+      linkedin: 'www.linkedin.com/in/mahta-ghorbanian/',
+      location: 'Calgary, Canada',
     },
     // Updated summary to match the previous version's About section
     summary: "I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Currently, I'm working as a Software Engineer/Research Assistant at University of Calgary. I’m passionate about learning new technologies and collaborating on innovative solutions. I’m excited to grow as a developer, work on exciting projects, and be part of a team where we can share ideas and learn from each other. Outside of work, you’ll find me painting, hiking, or exploring new places. I'm always open to connecting with fellow tech enthusiasts, so feel free to reach out!",
@@ -31,36 +30,96 @@ export default function App() {
     },
     professionalExperience: [
       {
-        title: 'Software Engineer/Research Assistant',
+        title: 'Software Engineer',
         company: 'University of Calgary',
         duration: 'May 2022 - Present',
-        description: 'Integrated a C# Windows application with a research project, improving project visibility. Developed an intuitive graph using Windows Forms, enhancing user interface usability. Created a feature to export data to Jira, streamlining project management processes. Collaborated with supervisors and industry partners to meet project goals efficiently. Identified and fixed code issues, leading to improved software quality and performance.',
+        description: [
+          'Integrated a C# Windows application with a research project, improving its visibility and functionality.',
+          'Developed an intuitive graph using Windows Forms, significantly enhancing user interface usability.',
+          'Created a feature to export data to Jira, which streamlined project management processes.',
+          'Performed comparative analysis on application versions, extracting key metrics to quantify improvements.',
+          'Collaborated with supervisors and the team to efficiently meet project goals.',
+          'Identified and fixed code issues, leading to improved software quality and performance.'
+        ],
         skills: 'C#, Visual Studio .Net Framework, Windows Forms, Git, Jira',
       },
       {
         title: 'Teaching Assistant',
         company: 'University of Calgary',
         duration: 'September 2021 – April 2024',
-        description: 'Taught courses on "Introduction to Software Engineering" and "Thinking with Data". Helped over 100 students learn UML, Java, and data visualization tools. Worked with professors to align tutorial content with lecture materials.',
+        description: [
+          'Led data analysis tutorials for over 160 students, focusing on data visualization tools like Tableau and Power BI.',
+          'Instructed over 120 students in core software engineering principles, including UML and Java.',
+          'Mentored students in applying data analysis concepts to real-world datasets.',
+          'Worked with professors to align tutorial content with lecture materials and course objectives.'
+        ],
         skills: 'UML, Testing, JUnit, Java, Git, Trello, Eclipse, Tableau, Power BI, Excel',
+      },
+      {
+        title: 'Intern Android Developer',
+        company: 'Part Software Company',
+        duration: '2019',
+        description: [
+          'Gained hands-on experience in Android development using Android Studio and Java.',
+          'Contributed to a team environment and learned essential version control using Git.'
+        ],
+        skills: 'Java, Android Studio, Git',
       },
     ],
     projects: [
       {
-        title: 'A Study on Deprecated APIs',
-        description: 'Developed a program to analyze deprecated API usage in 40 Java projects. Used Java, Python, and Git for development and version control. Provided insights to help project owners improve their codebases.',
+        title: 'Simple Starter Web Application',
+        duration: '2023',
+        description: [
+          'Implemented user registration and login functionality using Django and React.',
+          'Developed features for users to add and delete notes, showcasing full-stack capabilities.'
+        ],
+        tools: 'JavaScript, Python, Django, React',
+        github: [
+          { name: 'Backend', url: 'https://github.com/mahtagh/backend-repo' }, // Placeholder for backend
+          { name: 'Frontend', url: 'https://github.com/mahtagh/frontend-repo' }, // Placeholder for frontend
+        ],
       },
       {
-        title: 'Rocket-App',
-        description: 'Developed an Android app that displays a paginated list of upcoming rocket launches. Built a real-time countdown timer to show the remaining time until the next launch. Tools Used: Android Studio, Kotlin.',
+        title: 'Launch Rocket Android Application',
+        duration: '2023',
+        description: [
+          'Developed an Android app that displays a paginated list of upcoming rocket launches.',
+          'Built a real-time countdown timer to show the remaining time until the next launch.'
+        ],
+        tools: 'Android Studio, Kotlin',
+        github: [{ name: 'GitHub', url: 'https://github.com/mahtagh/Rocket-App' }],
+      },
+      {
+        title: 'Deprecated API Analysis Tool',
+        duration: '2023',
+        description: [
+          'Engineered a data-driven tool to analyze API deprecation patterns across 40 Java projects.',
+          'Leveraged Java for data extraction, Python for statistical analysis, and SQL for efficient data storage.',
+          'Generated actionable insights on API usage trends, enabling project owners to optimize their codebases and improve software maintainability.'
+        ],
+        tools: 'Java, Python, SQL',
+        // No github link, so it will be omitted
       },
       {
         title: 'Smart House Android App',
-        description: 'Developed functionality for receiving data from smart home modules. Implemented a system to control lighting in a smart home environment. Tools Used: Java, Android Studio.',
+        duration: '2023',
+        description: [
+          'Developed functionality for receiving data from smart home modules.',
+          'Implemented a system to control lighting in a smart home environment.'
+        ],
+        tools: 'Java, Android Studio',
+        // No github link, so it will be omitted
       },
       {
         title: 'Bombs and Stars Game',
-        description: 'Designed and created an interactive game with user-controlled characters. Used Java Swing to build an engaging and responsive user interface. Tools Used: Java, Java Swing.',
+        duration: '2023',
+        description: [
+          'Designed and created an interactive game with user-controlled characters.',
+          'Used Java Swing to build an engaging and responsive user interface.'
+        ],
+        tools: 'Java, Java Swing',
+        // No github link, so it will be omitted
       },
     ],
     education: [
@@ -87,7 +146,7 @@ export default function App() {
   const accentColor = 'text-[#295BA7]';
   const spanColor = 'text-[#E1528F]';
   const headerBgColor = 'bg-[#d8eefc]';
-  const bodyBgColor = 'bg-[#E0F9B5]';
+  const bodyBgColor = 'bg-white';
   const aboutBgColor = 'bg-[#FEFDCA]';
 
   return (
@@ -97,6 +156,7 @@ export default function App() {
         {`
           @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
           @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@400&display=swap');
+          @import url('https://pro.fontawesome.com/releases/v5.2.0/css/fontawesome.css');
           @import url('https://pro.fontawesome.com/releases/v5.2.0/css/all.css');
           
           html {
@@ -106,10 +166,10 @@ export default function App() {
       </style>
 
       {/* Header and Navigation */}
-      <header className={`w-full sticky top-0 z-50 ${isDarkMode ? 'bg-gray-800' : headerBgColor}`}>
+      <header className={`w-full sticky top-0 z-50 ${isDarkMode ? 'bg-gray-800' : `${headerBgColor} backdrop-blur-md`}`}>
         <nav className="flex items-center justify-between h-[65px] px-8 sm:px-12 md:px-24">
           <div className="flex items-center space-x-2">
-            <h2 className={`text-[2.5rem] font-bold ${isDarkMode ? 'text-white' : 'text-black'} flex items-center`}>
+            <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-black'} flex items-center whitespace-nowrap`}>
               {/* Placeholder for the logo image */}
               <div className="w-10 h-10 rounded-full bg-gray-400 mr-2 flex-shrink-0"></div>
               Mahta Ghorbanian
@@ -205,7 +265,7 @@ export default function App() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-800' : bodyBgColor}`}>
+        <section id="experience" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-800' : aboutBgColor}`}>
           <h2 className={`relative text-center text-4xl font-bold mb-12 pb-5 ${accentColor} ${frauncesFont} after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-48 after:h-[3px] after:bg-black after:-translate-x-1/2`}>
             Experience
           </h2>
@@ -214,7 +274,11 @@ export default function App() {
               <div key={index} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#E1528F] before:rounded-full before:ring-2 before:ring-[#E1528F] dark:before:ring-gray-800 before:z-10 before:shadow-md">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{job.title}</h3>
                 <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">{job.company} &bull; <span className="font-normal">{job.duration}</span></p>
-                <p className="mt-2 text-gray-600 dark:text-gray-300 leading-snug">{job.description}</p>
+                <ul className="list-disc ml-5 mt-2 text-gray-600 dark:text-gray-300 space-y-1">
+                  {job.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
                 {job.skills && (
                   <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                     <span className="font-semibold text-gray-600 dark:text-gray-300">Skills:</span> {job.skills}
@@ -226,22 +290,43 @@ export default function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-900' : aboutBgColor}`}>
+        <section id="projects" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
           <h2 className={`relative text-center text-4xl font-bold mb-12 pb-5 ${accentColor} ${frauncesFont} after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-48 after:h-[3px] after:bg-black after:-translate-x-1/2`}>
             Projects
           </h2>
           <div className="space-y-12">
             {resumeData.projects.map((project, index) => (
               <div key={index} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#E1528F] before:rounded-full before:ring-2 before:ring-[#E1528F] dark:before:ring-gray-800 before:z-10 before:shadow-md">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{project.title}</h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-300 leading-snug">{project.description}</p>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{project.title}</h3>
+                  <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                    <span>{project.duration}</span>
+                    {/* Render github links only if they exist */}
+                    {project.github && project.github.map((link, i) => (
+                      <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="ml-2 flex items-center">
+                        <i className="fab fa-github mr-1"></i>
+                        <span>{link.name}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <ul className="list-disc ml-5 mt-2 text-gray-600 dark:text-gray-300 space-y-1">
+                  {project.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+                {project.tools && (
+                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                    <span className="font-semibold text-gray-600 dark:text-gray-300">Tools Used:</span> {project.tools}
+                  </p>
+                )}
               </div>
             ))}
           </div>
         </section>
 
         {/* Education Section */}
-        <section id="education" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-800' : bodyBgColor}`}>
+        <section id="education" className={`p-8 sm:p-12 md:p-24 ${isDarkMode ? 'bg-gray-800' : aboutBgColor}`}>
           <h2 className={`relative text-center text-4xl font-bold mb-12 pb-5 ${accentColor} ${frauncesFont} after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-48 after:h-[3px] after:bg-black after:-translate-x-1/2`}>
             Education
           </h2>
@@ -269,14 +354,18 @@ export default function App() {
             <p className="text-lg text-center text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
               Thank you for taking the time to explore my portfolio. If you have any questions or need further information, please don't hesitate to contact me.
             </p>
-            <div className="flex justify-center space-x-6 mt-4 text-xl">
-              <a href={`mailto:${resumeData.contact.email}`} className={`${accentColor} hover:underline flex items-center`}>
+            <div className="flex justify-center flex-wrap space-x-6 mt-4 text-xl">
+              <a href={`mailto:${resumeData.contact.email}`} className={`${accentColor} hover:underline flex items-center mb-4`}>
                 <Mail className="w-5 h-5 mr-2" />
                 <span>{resumeData.contact.email}</span>
               </a>
-              <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className={`${accentColor} hover:underline flex items-center`}>
+              <a href={`https://${resumeData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className={`${accentColor} hover:underline flex items-center mb-4`}>
                 <Linkedin className="w-5 h-5 mr-2" />
                 <span>LinkedIn</span>
+              </a>
+              <a href={`https://${resumeData.contact.github}`} target="_blank" rel="noopener noreferrer" className={`${accentColor} hover:underline flex items-center mb-4`}>
+                <Github className="w-5 h-5 mr-2" />
+                <span>GitHub</span>
               </a>
             </div>
           </div>
