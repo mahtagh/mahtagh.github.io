@@ -2,88 +2,270 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahta Ghorbanian - Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahta Ghorbanian - Software Engineer</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
-    />
+<!-- Add in the custom css     -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
 
-    <link
-      rel="stylesheet"
-      href="https://static.fontawesome.com/css/fontawesome-app.css"
-    />
-    <link rel="icon" type="image/png" href="logo.png">  
+    <link
+      rel="stylesheet"
+      href="https://static.fontawesome.com/css/fontawesome-app.css"
+    />
+    <link rel="icon" type="image/png" href="logo.png">  
 
 </head>
 
+
+
 <body>
-    <div class="main-container">
-                <header>
-            <section class="nav">
-                                <div class="logo">
-                    <h2 class="custom-heading1">
-                        <img src="logo.png" alt="Custom Icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">
-                        Mahta Ghorbanian
-                    </h2>
-                </div>
+    <div class="main-container">
+        <!-- header section starts  -->
 
-                                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-button-container" for="menu-toggle">
-                    <div class="menu-button"></div>
-                </label>
-                                <ul class="menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>
-            </section>
-        </header>
+        <header>
+            <section class="nav">
+                <!-- We can also insert any logo here     -->
 
-                <section class="hero" id="hero">
-                        <div class="herocontent">
-                <h4 class="custom-heading">Hello! I'm</h4>
-                <h1>M<span class="surname">a</span>h<span>t</span>a <span>Gho</span>rban<span>ian</span></h1>
-                <h2>A Software <span class="span2"></span><span class="span2"></span> Engineer.</h2>
-                <h3><span class="span2">Welcome</span> to my <span class="span2">Portfolio!</span></h3>
-                <h4> </h4>
-            </div>
-            <div class="image">
-                <img src="developer.jpg" alt=" " />
-            </div>
-        </section>
-                        <section class="about" id="about">
-            <div class="main">
-                <img src="about.jpg" class="aboutimg">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5>Software Engineer</h5>
 
-                    <p>I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Experienced in C#, Java, and Python. Familiar with Django, React and JavaScript. Passionate about software development, I enjoy tackling complex problems and creating impactful solutions.</p>
-                    <p>I'm always eager to connect with fellow tech enthusiasts and industry professionals to discuss new technologies and explore opportunities in the software development world. Good at working with teams to create effective and user-friendly software solutions. Committed to continuous learning and applying new technologies.</p>
-                    
-                    <p style="color: #295BA7; font-weight: bold;">
-                        Contact Me:
-                        &nbsp;&nbsp;                         <a href="mailto:mahtagho@gmail.com" title="mahtagho@gmail.com">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                        &nbsp;&nbsp;                         <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank" title="LinkedIn: Mahta Ghorbanian">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        &nbsp;&nbsp;                         <a href="https://github.com/mahtagh" target="_blank" title="GitHub: mahtagh">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </section>
-                        <section class="skills" id="skills">
-            <div class
+                <div class="logo">
+                    <h2 class="custom-heading1">
+                        <img src="logo.png" alt="Custom Icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">
+                        Mahta Ghorbanian
+                    </h2>
+                                </div>
+
+                <!--  checkbox to control the icon's state    -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+                <!--  main menu    -->
+                <ul class="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </section>
+        </header>
+
+        <!-- header section ends -->
+        <section class="hero" id="hero">
+
+
+            <!----hero Section start---->
+
+            <div class="herocontent">
+                <h4 class="custom-heading">Hello! I'm</h4>
+                <h1>M<span class="surname">a</span>h<span>t</span>a <span>Gho</span>rban<span>ian</span></h1>
+                <h2 >A Software <span class="span2"></span><span class="span2"></span> Engineer.</h2>
+                <h3><span class="span2">Welcome</span> to my <span class="span2">Portfolio!</span></h3>
+                <h4> </h4>
+
+                <!-- <button class="btn1">Contact Me</button>
+                <button class="btn2">Resume  <i class="bi bi-download"></i></button> -->
+
+
+            </div>
+
+            <div class="image">
+                <img src="developer.jpg" alt=" " />
+            </div>
+
+        </section>
+        <!-- hero section ends -->
+
+
+        <!----About section start---->
+        <section class="about" id="about">
+            <div class="main">
+                <img src="about.jpg" class="aboutimg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Software Engineer</h5>
+
+                    <p>I'm a Software Engineer with a background in Computer Science from University of Calgary and a Bachelor's degree in Computer Engineering. Currently, I'm working as a Software Engineer/Research Assistant at University of Calgary.</p>
+    
+                    <p>I’m passionate about learning new technologies and collaborating on innovative solutions. I’m excited to grow as a developer, work on exciting projects, and be part of a team where we can share ideas and learn from each other.</p>
+                    
+                    <p>Outside of work, you’ll find me painting, hiking, or exploring new places. I'm always open to connecting with fellow tech enthusiasts, so feel free to reach out!</p>                    <!-- <button type="button">Let's Talk</button> -->
+                    
+                    <p style="color: #295BA7; font-weight: bold;">
+                        Contact Me:
+                        &nbsp;&nbsp; <!-- Adding space between the icons -->
+                        <a href="mailto:mahtagho@gmail.com" title="mahtagho@gmail.com">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        &nbsp;&nbsp; <!-- Adding space between the icons -->
+                        <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank" title="LinkedIn: Mahta Ghorbanian">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- About section ends -->
+
+        
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">Key Skills</h2>
+                
+                <p class="section-title">Programming Languages:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">C#, Java, Python, C</li>
+                </ul>
+            
+                <p class="section-title">Tools & Frameworks:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">Windows Forms, Visual Studio, Eclipse, Git, Jira</li>
+                    <li class="CV-timeline-details-item">.NET Framework, Entity Framework</li>
+                </ul>
+            
+                <p class="section-title">Databases:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">MySQL, PostgreSQL</li>
+                </ul>
+            
+                <p class="section-title">Methodologies:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">Agile, Object-Oriented Design (OOD), Unified Modeling Language (UML)</li>
+                </ul>
+            
+                <p class="section-title">Testing:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">Unit Testing, JUnit</li>
+                </ul>
+            
+                <p class="section-title">Data Visualization:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">Tableau, Power BI</li>
+                </ul>
+            
+                <p class="section-title">Other Skills:</p>
+                <ul class="CV-timeline-details">
+                    <li class="CV-timeline-details-item">Desktop application development</li>
+                    <li class="CV-timeline-details-item">Debugging and troubleshooting in Visual Studio</li>
+                    <li class="CV-timeline-details-item">Object-Oriented Programming (OOP)</li>
+                </ul>
+            </div>
+        </section>
+        <!--skills section ends   -->
+
+<!-- Projects section -->
+
+<div class="CV" id="experience">
+    <div class="title">
+        <h2 class="project-heading">Experience</h2>
+    </div>
+
+    <div class="CV-jobs">
+        <section class="CV-timeline CV-job">
+            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Software Engineer/Research Assistant </span><span class="CV-timeline-heading-location">University of Calgary, Alberta, Canada </span><small class="CV-timeline-heading-duration">May 2022 - Present</small></h3>
+
+            <ul class="CV-timeline-details">
+                <li class="CV-timeline-details-item">Skills: C#, Visual Studio .Net Framework, Windows Forms, Git, Jira</li>
+                <li class="CV-timeline-details-item">Integrated a C# Windows application with a research project, improving project visibility</li>
+                <li class="CV-timeline-details-item">Developed an intuitive graph using Windows Forms, enhancing user interface usability</li>
+                <li class="CV-timeline-details-item">Created a feature to export data to Jira, streamlining project management processes</li>
+                <li class="CV-timeline-details-item">Collaborated with supervisors and industry partners to meet project goals efficiently</li>
+                <li class="CV-timeline-details-item">Identified and fixed code issues, leading to improved software quality and performance</li>
+                
+            </ul>
+        </section>
+        <section class="CV-timeline CV-job">
+            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Teaching Assistant</span><span class="CV-timeline-heading-location">University of Calgary, Alberta, Canada </span><small class="CV-timeline-heading-duration">September 2021 – April 2024</small></h3>
+            <span class="CV-job"></span>
+            <ul class="CV-timeline-details">
+                <li class="CV-timeline-details-item">Covered Topics: UML, Testing, JUnit, Java, Git, Trello, Eclipse, Tableau, Power BI, Excel</li>
+                <li class="CV-timeline-details-item">Taught courses on "Introduction to Software Engineering" and "Thinking with Data"</li>
+                <li class="CV-timeline-details-item">Helped over 100 students learn UML, Java, and data visualization tools</li>
+                <li class="CV-timeline-details-item">Worked with professors to align tutorial content with lecture materials</li>
+                
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+<div class="service" id="projects">
+    <div class="title">
+        <h2 class="project-heading">Projects</h2>
+    </div>
+
+    <div class="CV-jobs">
+        <section class="CV-timeline CV-job">
+            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">A Study on Deprecated APIs</span></h3>
+            <ul class="CV-timeline-details">
+                <li class="CV-timeline-details-item">Developed a program to analyze deprecated API usage in 40 Java projects</li>
+                <li class="CV-timeline-details-item">Used Java, Python, and Git for development and version control</li>
+                <li class="CV-timeline-details-item">Provided insights to help project owners improve their codebases</li>
+
+            </ul>
+        </section>
+
+        <section class="CV-timeline CV-job">
+            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Smart House Android App</span></h3>
+            <ul class="CV-timeline-details">
+                <li class="CV-timeline-details-item">Developed functionality for receiving data from smart home modules</li>
+                <li class="CV-timeline-details-item">Implemented a system to control lighting in a smart home environment</li>
+            </ul>
+        </section>
+        <section class="CV-timeline CV-job">
+            <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Bombs and Stars Game</span></h3>
+            <ul class="CV-timeline-details">
+                <li class="CV-timeline-details-item">Designed and created an interactive game with user-controlled characters</li>
+                <li class="CV-timeline-details-item">Used Java Swing to build an engaging user interface</li>
+
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+<!-- Project section ends  -->
+               <!-- contact us section starts  -->
+        <section class="contact" id="contact">
+
+            <h2 class="contactTitle">Contact Me</h2>
+            <div class="container contactUs">
+
+                    <div class="left contactLeft">
+
+
+                        <div class="contact-info">
+
+                            <p><i class="bi bi-envelope-fill"></i><a href="mailto:mahtagho@gmail.com">  mahtagho@gmail.com</a></p>
+                            <p><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/mahta-ghorbanian/" target="_blank">  linkedin.com/in/mahta-ghorbanian/</a></p>
+                            <p><i class="bi bi-geo-alt-fill"></i> Calgary, Alberta, Canada</p>
+
+                        </div>
+                        <p class='contact-content'>Thank you for taking the time to explore my portfolio. If you have any questions or need further information, please don't hesitate to contact me. </p>
+
+                        <!-- <p class='contact-content'>Thanks for visiting .</p> -->
+
+                    </div>
+
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+            </div>
+
+
+
+</body>
+
+</html>
